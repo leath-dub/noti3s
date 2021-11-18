@@ -14,18 +14,18 @@ _Disclaimer: please dont use this, this is probably the worst way to implement s
 
 Basically you need to add the following format of line in your .i3/config file
 
-```c
+```
 bindsym $mod+n exec (your terminal) -- vim "+normal G^0i_" "+normal $" "+normal a_" "+normal ko" "+normal ja" "+normal o    - " +startinsert (directory to notes file); exec "zsh -c 'cd (notes directory); python3 removelines.py;date >> (directory to notes file); sleep 0.2s; i3-msg floating enable;'"
 ```
-Example of what I wrote in my i3 config( note that the brackets above were just for demonstration, and also make sure you link to directory of python script, before you run it )
+Below is an example of what I wrote in my i3 config( note that the brackets above were just for demonstration, and also make sure you link to directory of python script, before you run it ). If your cloning to home, this will mostly be the same(except for the terminal)
 
-```c
-bindsym $mod+n exec st -- vim "+normal G^0i_" "+normal $" "+normal a_" "+normal ko" "+normal ja" "+normal o    - " +startinsert ~/backups-linux-sd/notes/notes.md; exec "zsh -c 'cd ~/backups-linux-sd/notes; python3 removelines.py;date >> ~/backups-linux-sd/notes/notes.md; sleep 0.2s; i3-msg floating enable;'"
+```
+bindsym $mod+n exec st -- vim "+normal G^0i_" "+normal $" "+normal a_" "+normal ko" "+normal ja" "+normal o    - " +startinsert ~/noti3s/notes.md; exec "zsh -c 'cd ~/noti3s; python3 removelines.py;date >> ~/noti3s/notes.md; sleep 0.2s; i3-msg floating enable;'"
 ```
 
 By default the keybind is $mod+n, this can of course be changed
 
-There is a python3 script found in this repo, to clone the repo use this command
+There is a python3 script can be found in this repo( the script as well as edit to i3 config is all you need ), to clone the repo use this command
 ```zsh
 git clone https://github.com/leath-dub/noti3s.git
 ```
