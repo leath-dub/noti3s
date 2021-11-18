@@ -2,6 +2,8 @@
 This repo shows you how I implemented a simple note taking system on i3.
 _Disclaimer: please dont use this, this is probably the worst way to implement such a system_
 
+---
+
 ### Dependencies
 
 * Vim 
@@ -10,7 +12,10 @@ _Disclaimer: please dont use this, this is probably the worst way to implement s
 * python3
 * git
 
+--- 
+
 ### Installation(very manual)
+
 
 Basically you need to add the following format of line in your .i3/config file
 
@@ -29,7 +34,12 @@ There is a python3 script can be found in this repo( the script as well as edit 
 ```zsh
 git clone https://github.com/leath-dub/noti3s.git
 ```
+---
 
+### Why this is terrible? ( funny enough this is also the "how to use" guide )
+
+To exit and not save the "-" and other changes by the python3 script, you must exit the notes file with ```:q!```.
+if you have made a note however, you can save that with ```:wq```
 
 
 
